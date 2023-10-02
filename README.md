@@ -1,40 +1,7 @@
 # SVG-Logo-Maker
 
 
-
-
-Using Object.value
-Using Object.keys
-https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/values
-https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/keys
-https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/every
-
-
-
-
-The `forEach` method does not provide a built-in way to break or stop the iteration early. This means that even if an empty string is encountered in the array, the iteration will continue until all elements have been processed.
-
-On the other hand, the `every` method is specifically designed for scenarios where you want to check if all elements in an array satisfy a certain condition. It iterates over the array and returns `true` if the given callback function returns `true` for every element. If the callback function returns `false` for any element, the iteration is stopped and `every` immediately returns `false`.
-
-
-
-
-While not a requirement, it is recommended that you place any common functionality and properties shared by the `Triangle`, `Circle`, and `Square` classes in a parent `Shape` class and use inheritance to reuse the code in the child classes.
-
-The following example test should pass:
-
-```js
-const shape = new Triangle();
-shape.setColor("blue");
-expect(shape.render()).toEqual('<polygon points="150, 18 244, 182 56, 182" fill="blue" />');
-
-
-
-Reference: 
-1.SVG files is that later elements are rendered atop previous elements.https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial/Getting_Started
-2.The SVG file can be referenced with an object element:
-ex: <object data="image.svg" type="image/svg+xml"></object>
-
+## Project Description 
 
 
 ```md
@@ -53,3 +20,31 @@ AND the output text "Generated logo.svg" is printed in the command line
 WHEN I open the `logo.svg` file in a browser
 THEN I am shown a 300x200 pixel image that matches the criteria I entered
 ```
+
+## Table of Contents 
+i. Project Title 
+ii. Project Description
+1. How to Install and Run the Project
+2. How to use the project
+3. Credits
+4. License
+5. Tests
+
+##  How to Install and Run the Project
+
+##  How to use the project
+
+##  Credits 
+- Using Object.value: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/values
+- Using Object.keys: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/keys
+- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/every
+- SVG files is that later elements are rendered atop previous elements.https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial/Getting_Started
+-Crash Course Testing: https://www.youtube.com/watch?v=7r4xVDI2vho&t=605s
+-Crash Course OOP: https://www.youtube.com/watch?v=vDJpGenyHaA&t=1564s
+
+
+## License
+
+## Tests
+
+
