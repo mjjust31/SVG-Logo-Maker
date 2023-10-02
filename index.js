@@ -1,7 +1,7 @@
 const promptUser = require("./lib/script-files/inquirer");
 const fs = require("fs");
 const path = require("path");
-const { Shape, Circle } = require("./lib/script-files/shapes");
+const { Shape, Circle, Square, Triangle } = require("./lib/script-files/shapes");
 
 promptUser()
   .then((answers) => {
@@ -14,6 +14,26 @@ promptUser()
           console.error(err);
         } else {
           console.log("circle created");
+        }
+      });
+    }
+    if (shape === "square") {
+      const logoSquare = new Square(shapeColor, shapeColor);
+      fs.writeFile("examples.svg", logoSquare.renderSquare(), (err) => {
+        if (err) {
+          console.error(err);
+        } else {
+          console.log("square created");
+        }
+      });
+    }
+    if (shape === "triangle") {
+      const logoTriangle = new Triangle(shapeColor, shapeColor);
+      fs.writeFile("examples.svg", logoTriangle.renderTriangle(), (err) => {
+        if (err) {
+          console.error(err);
+        } else {
+          console.log("triangle created");
         }
       });
     }
