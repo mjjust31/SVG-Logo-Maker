@@ -1,27 +1,23 @@
 const promptUser = require("./lib/script-files/inquirer");
 const fs = require("fs");
 const path = require("path");
+const { Shape, Circle } = require("./lib/script-files/shapes");
 
 promptUser()
   .then((answers) => {
-    console.log('answers:',answers);
+    // console.log("answers:", answers);
+    const { text, textColor, shape, shapeColor } = answers;
+    if (shape === "circle") {
+      const logoCircle = new Circle(shapeColor, shapeColor);
+      fs.writeFile("examples.svg", logoCircle.renderCircle(), (err) => {
+        if (err) {
+          console.error(err);
+        } else {
+          console.log("circle created");
+        }
+      });
+    }
   })
   .catch((error) => {
     console.log(error);
   });
-
-// function Shape(text, textColor, shape, shapeColor) {
-//   this.text = text;
-//   this.textColor = textColor;
-//   this.shape = shape;
-//   this.shapeColor = shapeColor;
-// }
-
-// function renderCircle(text, textColor, shape, ShapeColor, circle) {
-//   Shape.call(this, text, textColor, shape, shapeColor);
-//   this.circle = circle;
-// }
-
-// fs.writeFile("shape.svg", answers, (err) =>
-//   err ? console.error(err) : console.log("Success!")
-// );
