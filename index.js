@@ -9,7 +9,7 @@ promptUser()
     const { text, textColor, shape, shapeColor } = answers;
     if (shape === "circle") {
       const logoCircle = new Circle(shapeColor, shapeColor, text, textColor);
-      fs.writeFile("circle-example.svg", logoCircle.renderCircle(), (err) => {
+      fs.writeFile("./examples/circle-example.svg", logoCircle.renderCircle(), (err) => {
         if (err) {
           console.error(err);
         } else {
@@ -19,7 +19,7 @@ promptUser()
     }
     if (shape === "square") {
       const logoSquare = new Square(shapeColor, shapeColor, text, textColor);
-      fs.writeFile("square-example.svg", logoSquare.renderSquare(), (err) => {
+      fs.writeFile("./examples/square-example.svg", logoSquare.renderSquare(), (err) => {
         if (err) {
           console.error(err);
         } else {
@@ -29,7 +29,7 @@ promptUser()
     }
     if (shape === "triangle") {
       const logoTriangle = new Triangle(shapeColor, shapeColor, text, textColor);
-      fs.writeFile("triangle-example.svg", logoTriangle.renderTriangle(), (err) => {
+      fs.writeFile("./examples/triangle-example.svg", logoTriangle.renderTriangle(), (err) => {
         if (err) {
           console.error(err);
         } else {

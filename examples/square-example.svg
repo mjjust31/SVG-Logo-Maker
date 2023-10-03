@@ -1,4 +1,4 @@
 <svg width="500" height="500" version="1.1" xmlns="http://www.w3.org/2000/svg">
     <rect x="100" y="100" width="300" height="300" stroke="black" fill = 'black' />
-    <text text-anchor="middle" x="250" y="300" font-size="60px" fill= "white">MMM</text>
+    <text text-anchor="middle" x="250" y="300" font-size="60px" fill= "pink">JMJ</text>
     </svg>

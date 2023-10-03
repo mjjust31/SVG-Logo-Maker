@@ -1,8 +1,11 @@
 # SVG-Logo-Maker
 
+Recording: https://drive.google.com/file/d/1EyNjbzDt_V7ulw4pqdYzoo6_iNbU2I8f/view
 
 ## Project Description 
 
+Using a Node.js command-line, this application will generate a circle, triangle, or sqaure with characters between 1-3 in length. 
+Each example of a ciricle, square, and triabngle will be saved to the example forlder. 
 
 ```md
 GIVEN a command-line application that accepts user input
@@ -32,7 +35,11 @@ ii. Project Description
 
 ##  How to Install and Run the Project
 
+This project uses inquirer version 8.2.4 and jest version 26.6.3. After installing these libraries, you can go tthe comman line to run the project by typing "node index". 
+
 ##  How to use the project
+
+In the command line, type "node index" for the questions to be generated for your logo. The user will be asked for text (up to three characters), text color, shape, and shape color. Once all of the questions are answered, the logo will be rendered in a svg file under the example folder. This project was built to become familiar with class constructors and beginning to create test-driven code. 
 
 ##  Credits 
 - Using Object.value: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/values
@@ -45,6 +52,8 @@ ii. Project Description
 
 ## License
 
-## Tests
+MIT
+
+
 
 
